@@ -1,14 +1,13 @@
+import { Platos } from "./Platos"
 
 
 export const Cards = () => {
     return (
-        <section className=" bg-yellow-500 conteiner-cards m-2">
-            <img className="my-2 flex items-center" src="#" alt="*Foto de plato*" />
-            <hr />
-            <p className="my-2">Description</p>
-            <hr />
-            <p className="my-2">precio</p>
-            <hr />
+        <section className="flex flex-row">
+        <Platos nombre="pollo" description="pollo al horno con papas" precio= "$2550" />
+        <Platos nombre="Bife a punto" description="a caballo con papas fritas" precio= "$3550" />
+        <Platos nombre="Wrap de pollo" description="wrap de pollo con queso" precio= "$2600" />
+        <Platos nombre="Mila Napo" description="Milanesa Napolitana" precio= "$2900" />
         </section>
     )
 }

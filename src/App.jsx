@@ -7,7 +7,7 @@ import { Cards } from './assets/main/Cards'
 import { Footer } from './assets/footer/Footer'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
