@@ -2,7 +2,6 @@
 
 import { TfiShoppingCart } from "react-icons/tfi";
 import './NavBar.css'
-
 export const NavBar = () => {
     return (
         <header className="bg-yellow-900 ">
