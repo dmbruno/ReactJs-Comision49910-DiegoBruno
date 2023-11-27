@@ -16,6 +16,7 @@ function App() {
     <>
     <NavBar/>
     <ItemListConteiner/>
+    <ItemListConteiner/> {/* solo a modo de llenado */}
     <Footer/>
         
     </>
