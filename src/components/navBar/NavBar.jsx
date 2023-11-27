@@ -2,6 +2,7 @@
 
 import { TfiShoppingCart } from "react-icons/tfi";
 import './NavBar.css'
+
 export const NavBar = () => {
     return (
         <header className="bg-yellow-900 ">
@@ -10,12 +11,12 @@ export const NavBar = () => {
                     <img src="./LogoOso.svg" alt="logo" />
                 </div>
                 <ul className="flex gap-11">
-                    <li className="text-white text-lg hover:text-black font-bold font-mono">Login</li>
-                    <li className="text-white text-lg hover:text-black font-bold font-mono">Menu del Oso</li>
-                    <li className="text-white text-lg hover:text-black font-bold font-mono">Pedir Cuenta</li>
+                    <li className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Login</li>
+                    <li className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Menu del Oso</li>
+                    <li className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Pedir Cuenta</li>
                 </ul>
-                <div className="contenedor-icono">
-                    <TfiShoppingCart />
+                <div className="contenedor-icono cursor-pointer">
+                    <TfiShoppingCart/>
                 </div>
             </div>
         </header>

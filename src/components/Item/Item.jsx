@@ -1,6 +1,6 @@
 
 
-export const Platos = ({ nombre, description, precio }) => {
+export const Item = ({ nombre, description, precio }) => {
 
     return (
         <section className=" bg-yellow-500 conteiner-cards m-2">
@@ -14,3 +14,4 @@ export const Platos = ({ nombre, description, precio }) => {
         </section>
     )
 }
+export default Item

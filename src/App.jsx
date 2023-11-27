@@ -1,10 +1,13 @@
 
 
 import './App.css'
-import './assets/main/Cards'
-import { NavBar } from './assets/navBar/NavBar'
-import { Cards } from './assets/main/Cards'
-import { Footer } from './assets/footer/Footer'
+import './components/ItemListConteiner/ItemListConteiner' 
+import { NavBar } from './components/navBar/NavBar'
+import { Footer } from './components/footer/Footer'
+import { ItemListConteiner } from './components/ItemListConteiner/ItemListConteiner'
+
+
+
 
 function App() {
   
@@ -12,7 +15,7 @@ function App() {
   return (
     <>
     <NavBar/>
-    <Cards/>
+    <ItemListConteiner/>
     <Footer/>
         
     </>
