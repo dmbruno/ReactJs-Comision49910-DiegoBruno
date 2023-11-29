@@ -8,7 +8,7 @@ import { ItemListConteiner } from './components/ItemListConteiner/ItemListContei
 import { Contenedor } from './components/contenedor/Contenedor'
 import { BtnClickMe } from './components/botones/BtnClickMe'
 import { useState } from 'react'
-
+import { Counter } from './components/counter/counter'
 
 
 function App() {
@@ -28,6 +28,7 @@ function App() {
         mostrar && <ItemListConteiner />
       }
 
+
       <Contenedor>
         <h2>Diego Bruno</h2>
         <h3>ReactJs comision49910</h3>
@@ -35,6 +36,9 @@ function App() {
         <BtnClickMe onClick={() => { console.log("boton clickeado"); }}
           className="bg-gray-800" texto="Click Me" />
       </Contenedor>
+
+      <Counter/>
+
       <Footer />
     </>
   )

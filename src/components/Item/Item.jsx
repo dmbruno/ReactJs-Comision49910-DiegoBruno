@@ -20,3 +20,6 @@ export const Item = ({ nombre, description, precio }) => {
     )
 }
 export default Item
+
+
+
