@@ -1,4 +1,6 @@
 
+import { BtnClickMe } from "../botones/BtnClickMe"
+
 
 export const Item = ({ nombre, description, precio }) => {
 
@@ -11,6 +13,9 @@ export const Item = ({ nombre, description, precio }) => {
             <hr />
             <p className="my-2">{precio}</p>
             <hr />
+            <BtnClickMe 
+            onClick={ ()=> {alert("pedido enviado a cocina")} }
+            className="font-mono bg-slate-300 my-4 text-black font-extrabold" texto="pedir plato"/>
         </section>
     )
 }
