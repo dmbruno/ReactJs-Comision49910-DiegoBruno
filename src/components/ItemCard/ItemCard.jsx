@@ -15,7 +15,7 @@ export const ItemCard = ({ item }) => {
                 </div>
                 <div className="contenedor-info">
 
-                    <h3 className="font-bold text-center m-2">Plato: {item.name}</h3>
+                    <h3 className="font-bold text-center m-2">{item.name}</h3>
 
                     <div className="container-texto">
                         <hr className="m-2" />
