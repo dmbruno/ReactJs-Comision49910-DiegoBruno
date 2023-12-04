@@ -8,7 +8,7 @@ export const mock_data = [{
 },
 {
     id: 2,
-    name: "Pollo con paas",
+    name: "Pollo con papas",
     price: 1890,
     img: "https://unsplash.com/es/fotos/verduras-y-carne-en-un-tazon-kcA-c3f_3FE",
     description: "Pollo al horno con papas españolas",
@@ -16,7 +16,7 @@ export const mock_data = [{
 },
 {
     id: 3,
-    name: "MIlanga a caballp",
+    name: "Milanga a caballo",
     price: 2590,
     img: "https://unsplash.com/es/fotos/verduras-y-carne-en-un-tazon-kcA-c3f_3FE",
     description: "Milanesa con papas y huevo frito",
