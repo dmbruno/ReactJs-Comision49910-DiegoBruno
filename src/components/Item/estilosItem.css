@@ -1,0 +1,17 @@
+
+.contenedor-card{
+    display: flex;
+    padding: .625rem;
+    margin: .9375rem;
+    box-shadow: 3px 3px 5px gray;
+}
+
+.container-prod{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.conteinerDesc{
+    width: auto;
+    height: 6.25rem;
+}

@@ -1,16 +1,27 @@
 
 import './ItemListConteiner.css'
 import Item from '../Item/Item'
+import { pedirDatos } from '../../utils/utils'
+import { useState, useEffect } from 'react'
 
 
 
 export const ItemListConteiner = () => {
+    const [productos, setProductos] = useState([])
+
+    useEffect(() => {
+        pedirDatos()
+            .then((data) => {
+                setProductos(data)
+            })
+    },[])
+
+console.log(productos);
     return (
-        <section className="flex flex-row justify-around">
-            <Item nombre="pollo" description="pollo al horno con papas" precio="$2550" />
-            <Item nombre="Bife a punto" description="a caballo con papas fritas" precio="$3550" />
-            <Item nombre="Wrap de pollo" description="wrap de pollo con queso" precio="$2600" />
-            <Item nombre="Mila Napo" description="Milanesa Napolitana" precio="$2900" /> 
-        </section>
+        <>
+            <h3 className='font-extrabold text-center m-4 font-mono text-4xl'>Menu del Oso</h3>
+            <hr  className='m-7'/>
+            <Item productos={productos} />
+        </>
     )
 }
