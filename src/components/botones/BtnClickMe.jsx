@@ -1,10 +1,10 @@
 
 
-export const BtnClickMe = ({ texto, className = '', onClick }) => {
+export const BtnClickMe = ({ texto, className = '' }) => {
     
     return (
 
-        <button onClick={onClick} className={`py-2 px-5 my-3 text-white rounded ${className}`} >
+        <button className={`py-1 my-3 text-white rounded ${className}`} >
             {texto}
         </button>
     )

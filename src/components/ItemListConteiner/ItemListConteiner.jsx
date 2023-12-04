@@ -17,19 +17,20 @@ export const ItemListConteiner = () => {
                 setProductos(data)
                 setLoading(false)
             })
-    },[])
+    }, [])
 
-console.log(productos);
+    console.log(productos);
     return (
         <>
-        <h3 className='font-extrabold text-center m-4 font-mono text-4xl'>Menu del Oso</h3>
-            <hr  className='m-7'/>
-        {
-            loading 
-            ? <h2 className='text-center text-4xl'>Cargando...</h2>
-            :<Item productos={productos} />
-        }
-            
+            <h3 className='font-extrabold text-center m-4 font-mono text-4xl'>Menu del Oso</h3>
+            <hr className='m-7' />
+
+            {
+                loading
+                    ? <h2 className='text-center text-4xl m-4'>Cargando...</h2>
+                    : <Item productos={productos} />
+            }
+
         </>
     )
 }

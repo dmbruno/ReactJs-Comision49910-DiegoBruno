@@ -19,13 +19,13 @@ function App() {
     <>
       <NavBar />
       <ItemListConteiner/>
-      <Contenedor>
+   {/*    <Contenedor>
         <h2>Diego Bruno</h2>
         <h3>ReactJs comision49910</h3>
         <p>este boton vino por children</p>
         <BtnClickMe onClick={() => { console.log("boton clickeado"); }}
           className="bg-gray-800" texto="Click Me" />
-      </Contenedor>
+      </Contenedor> */}
       
       {/* <Counter /> */}
       <Footer />
