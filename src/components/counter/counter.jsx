@@ -1,5 +1,5 @@
 import { useState } from "react"
-
+import './counter.css'
 
 export const Counter = () => {
 
@@ -16,10 +16,10 @@ export const Counter = () => {
 
 
     return (
-        <div className="flex flex-row m-5 mb-0">
-            <button className="container flex justify-center text-black rounded bg-white font-mono hover:bg-slate-300" onClick={sumar}>+</button>
-            <p className="container flex justify-center">Cantidad: {contador}</p>
-            <button className="container flex justify-center text-black rounded bg-white font-mono hover:bg-slate-300" onClick={restar}>-</button>
+        <div className="flex flex-row mt-20 justify-evenly">
+            <button className="flex justify-center text-black rounded bg-white font-mono hover:bg-slate-600 py-3 px-9" onClick={sumar}>+</button>
+            <p className="parrafo flex justify-center py-1 px-8">Cantidad: {contador}</p>
+            <button className="flex justify-center text-black rounded bg-white font-mono hover:bg-slate-600 py-3 px-9" onClick={restar}>-</button>
         </div>
     )
 }
