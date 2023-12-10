@@ -1,25 +1,15 @@
 
 import './ItemListConteiner.css'
 import Item from '../Item/Item'
-import { pedirDatos } from '../../utils/utils'
-import { useState, useEffect } from 'react'
+import useProductos from '../hooks/useProductos' //import para utilizar el hook
 
 
 
 export const ItemListConteiner = () => {
-    const [productos, setProductos] = useState([])
-    const [loading, setLoading] = useState(true)
 
-    useEffect(() => {
-        setLoading(true)
-        pedirDatos()
-            .then((data) => {
-                setProductos(data)
-                setLoading(false)
-            })
-    }, [])
+    const { productos, loading } = useProductos() // desestructuracion del hook con las propriedades que necesito en el return
 
-    console.log(productos);
+
     return (
         <>
             <h3 className='font-extrabold text-center m-4 font-mono text-4xl'>Menu del Oso</h3>
