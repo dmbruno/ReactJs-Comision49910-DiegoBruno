@@ -1,4 +1,5 @@
 import { Boton } from "../botones/Boton";
+import { Counter } from "../counter/counter";
 
 
 
@@ -16,9 +17,7 @@ const ItemDetail = ({ item }) => {
                         <p className="text-xl font-bold py-5 px-5 pt-16"> Precio: ${item.price}</p>
                     </div>
                 </div>
-                <div className='py-5 px-5'>
-                    <Boton texto={'Agregar a Carrito'} className="bg-yellow-700 rounded py-2 px-4"></Boton>
-                </div>
+                <Counter />
             </div>
         </>
     )

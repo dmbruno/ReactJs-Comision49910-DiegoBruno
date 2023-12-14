@@ -9,7 +9,7 @@ import './ItemCard.css'
 
 export const ItemCard = ({ item }) => {
     return (
-        
+            
             <div className="contenedor-card rounded bg-yellow-700 h-auto">
                 <article className="container-article flex flex-col items-center">
                     <div className="portada flex-1">
@@ -27,7 +27,7 @@ export const ItemCard = ({ item }) => {
                     </button>
                 </article>
             </div>
-        
+            
     )
 }
 

@@ -10,6 +10,7 @@ import { NotFound } from './components/not-found/NotFound'
 import { Inicio } from './components/Inicio/Inicio'
 import { ItemDetailConteiner } from './components/ItemDetailConteiner/ItemDetailConteiner'
 
+
 function App() {
 
 
@@ -18,17 +19,20 @@ function App() {
   return (
 
     <BrowserRouter>
+
       <NavBar />
 
       <Routes>
 
-        <Route path="/" element={ <Inicio /> } />
+        <Route path="/" element={<Inicio />} />
+        
+        <Route path="/menu" element={<ItemListConteiner />} />
+        <Route path="/menu/:categoryId" element={<ItemListConteiner />} />
 
-        <Route path="/menu/:categoryId" element={ <ItemListConteiner/> } />
+        <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
 
-        <Route path="/item/:itemId" element={ <ItemDetailConteiner/> } />
+        <Route path="*" element={<NotFound />} />
 
-        <Route path="*" element={ <NotFound /> } />
       </Routes>
 
       <Footer />

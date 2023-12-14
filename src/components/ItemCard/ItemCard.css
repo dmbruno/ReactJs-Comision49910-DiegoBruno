@@ -4,6 +4,7 @@
     margin: .625rem;
     box-shadow: 3px 3px 5px gray;
     align-items: stretch;
+    justify-content: center;
 }
 
 .img {
