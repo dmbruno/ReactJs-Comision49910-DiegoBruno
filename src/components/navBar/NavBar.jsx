@@ -2,7 +2,7 @@
 
 import { TfiShoppingCart } from "react-icons/tfi";
 import './NavBar.css'
-
+import { Link } from "react-router-dom";
 
 
 
@@ -15,9 +15,9 @@ export const NavBar = () => {
                     <img src="./LogoOso.svg" alt="logo" />
                 </div>
                 <ul className="flex gap-11">
-                    <li className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Login</li>
-                    <li className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Menu del Oso</li>
-                    <li className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Pedir Cuenta</li>
+                    <Link to={"/"}  className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Inicio</Link>
+                    <Link to={"/Menu"}className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Menu del Oso</Link>
+                    
                 </ul>
                 <div className="contenedor-icono cursor-pointer">
                     <TfiShoppingCart />

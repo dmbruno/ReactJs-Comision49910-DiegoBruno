@@ -1,13 +1,33 @@
 
 import './ItemListConteiner.css'
 import Item from '../Item/Item'
-import useProductos from '../hooks/useProductos' //import para utilizar el hook
-
+import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { pedirDatos } from '../../utils/utils'
 
 
 export const ItemListConteiner = () => {
 
-    const { productos, loading } = useProductos() // desestructuracion del hook con las propriedades que necesito en el return
+    
+    const [productos, setProductos] = useState([])
+    const [loading, setLoading] = useState(true)
+
+    const { categoryId } = useParams()
+    
+
+    useEffect(() => {
+        setLoading(true)
+        pedirDatos()
+            .then((data) => {
+                const items = categoryId
+                                    ? data.filter(prod => prod.category === categoryId)
+                                    : data
+                setProductos(items)
+                
+            })
+            .finally(()=> setLoading(false));
+            
+    }, [categoryId])
 
 
     return (

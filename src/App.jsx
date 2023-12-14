@@ -4,11 +4,11 @@ import './App.css'
 import './components/ItemListConteiner/ItemListConteiner'
 import { NavBar } from './components/navBar/NavBar'
 import { Footer } from './components/footer/Footer'
-import { Contenedor } from './components/contenedor/Contenedor'
-import { BtnClickMe } from './components/botones/BtnClickMe'
-import { Counter } from './components/counter/counter'
 import { ItemListConteiner } from './components/ItemListConteiner/ItemListConteiner'
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { NotFound } from './components/not-found/NotFound'
+import { Inicio } from './components/Inicio/Inicio'
+import { ItemDetailConteiner } from './components/ItemDetailConteiner/ItemDetailConteiner'
 
 function App() {
 
@@ -16,20 +16,27 @@ function App() {
 
 
   return (
-    <>
+
+    <BrowserRouter>
       <NavBar />
-      <ItemListConteiner/>
-   {/*    <Contenedor>
-        <h2>Diego Bruno</h2>
-        <h3>ReactJs comision49910</h3>
-        <p>este boton vino por children</p>
-        <BtnClickMe onClick={() => { console.log("boton clickeado"); }}
-          className="bg-gray-800" texto="Click Me" />
-      </Contenedor> */}
-      
-      {/* <Counter /> */}
+
+      <Routes>
+
+        <Route path="/" element={ <Inicio /> } />
+
+        <Route path="/menu/:categoryId" element={ <ItemListConteiner/> } />
+
+        <Route path="/item/:itemId" element={ <ItemDetailConteiner/> } />
+
+        <Route path="*" element={ <NotFound /> } />
+      </Routes>
+
       <Footer />
-    </>
+
+
+
+
+    </BrowserRouter>
   )
 }
 
