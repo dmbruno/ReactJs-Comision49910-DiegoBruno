@@ -17,7 +17,7 @@ const ItemDetail = ({ item }) => {
                         </div>
                     </div>
                     <div className='py-5 px-5'>
-                        <button className="bg-yellow-400 rounded py-2 px-4">Agregar al carrito</button>
+                        <button className="bg-yellow-700 rounded py-2 px-4">Agregar al carrito</button>
                     </div>
                 </div>
             </div >

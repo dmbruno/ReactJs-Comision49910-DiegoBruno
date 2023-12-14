@@ -6,6 +6,7 @@ import { Link } from "react-router-dom"
 import './ItemCard.css'
 
 
+
 export const ItemCard = ({item}) => {
     return (
         <div className="contenedor-card rounded bg-yellow-700 h-auto" key={item.id}>
@@ -20,8 +21,8 @@ export const ItemCard = ({item}) => {
                         <p className="text-gray-300 font-bold font-mono text-center mt-3">Que tiene? : {item.description}</p>
                     </div>
                 </div>
-                <button>
-                    <Link to={`/item/${item.id}`}>Ver mas</Link>
+                <button className="bg-yellow-200 rounded py-2 px-4 font-mono text-black mt-10">
+                    <Link to={`/item/${item.id}`}>Ver Mas</Link>
                 </button>
             </article>
         </div>
