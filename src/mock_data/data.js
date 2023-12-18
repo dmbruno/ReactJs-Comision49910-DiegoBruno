@@ -1,77 +1,8 @@
 
 
 export const mock_data = [{
+
     id: 1,
-    name: "Ensalada",
-    price: 1550,
-    img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
-    category:"burguers",
-    description: "Lechuga, tomate, zanahoria, queso, pollo, maíz, aceite, vinagre, huevo y cebolla.",
-    
-},
-{
-    id: 2,
-    name: "Pollo con papas",
-    price: 1890,
-    img: "https://img.freepik.com/foto-gratis/pollo-frito-servido-papas-tomates-cherry-aji-lechuga_140725-7840.jpg?w=900&t=st=1701722842~exp=1701723442~hmac=f79f7ac918d297356e40560c0a539a8ee0cfeffcc102f4e6ab63170f00bc03dc",
-    category:"burguers",
-    description: "Pollo al horno con papas españolas"
-},
-{
-    id: 3,
-    name: "Milanga a caballo",
-    price: 2590,
-    img: "https://img.freepik.com/foto-gratis/pollo-parrilla-cortado-papas-fritas_140725-1144.jpg?w=900&t=st=1701724337~exp=1701724937~hmac=2e08c821bc75cdab74fdd8d5aa4adb9259f323a8a1e7466b278b78624779164e",
-    category:"burguers",
-    description: "Milanesa con papas y huevo frito"
-},
-{
-    id: 4,
-    name: "Hamburguesa del OSO",
-    price: 3590,
-    img: "https://as2.ftcdn.net/v2/jpg/05/61/78/69/1000_F_561786951_IdQbtR0bga3RzISgodGvIRMFEBqmjfcn.jpg",
-    category:"burguers",
-    description: "100gr de carne, pan de papa, tomate , lechuga, huevo, jamon y queso",
-    
-},
-{
-    id: 6,
-    name: "Suprema De Pollo C/Guarnicion",
-    price: 2650,
-    img: "https://img.freepik.com/foto-gratis/alto-angulo-bistec-plato-ensalada-vaso-cerveza_23-2148754939.jpg?w=826&t=st=1701724490~exp=1701725090~hmac=ba8f5124bd4626f0df6459d957d06051efe91b3392b93ebb5487c2e714b2fef0",
-    category:"cervezas",
-    description: "Suprema de pollo con guarnicion a eleccion",
-    
-},
-{
-    id: 6,
-    name: "Tabla para 2",
-    price: 4590,
-    img: "https://img.freepik.com/foto-gratis/arreglo-comida-deliciosa-alto-angulo_23-2149272712.jpg?w=996&t=st=1701724554~exp=1701725154~hmac=d2b9bd31fd7ee8589f726d93821dca044bb9815b4f31e8c944969c1248302544",
-    category:"ensaladas",
-    description: "Mini tabla para dos, pican 3",
-    
-},
-{
-    id: 7,
-    name: "Sanguche de vacio",
-    price: 3210,
-    img: "https://img.freepik.com/foto-gratis/sandwich-ternera-parrilla-sobre-pan-ciabatta-ensalada-generado-ia_188544-21369.jpg?w=996&t=st=1701724615~exp=1701725215~hmac=7e4025fea66ce957cd440dcf1df6f57e008be9f22b796f9456f3570ac4d802d4",
-    category:"ensaladas",
-    description: "Sanguche de vacio desmechado especial de la casa",
-    
-},
-{
-    id: 8,
-    name: "Fritas",
-    price: 1990,
-    img: "https://img.freepik.com/foto-gratis/vista-superior-deliciosas-papas-fritas-salsa_23-2149235944.jpg?w=740&t=st=1701724652~exp=1701725252~hmac=9a2ac92245bc3cd06392fae8178d487e49642beb7621ce434dc590b7241a8aba",
-    category:"frituras",
-    description: "Porcio  de papas para acompañar lo que quieras",
-    
-},
-{
-    id: 9,
     name: "GRIZZLY QUEEN",
     price: 2550,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -80,15 +11,15 @@ export const mock_data = [{
     
 },
 {
-    id: 10,
-    name: "ROCK & ROLL",
+    id: 2,
+    name: "ROCK&ROLL",
     price: 2550,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
     category: "burguers",
     description: "Jamon grill, cheddar, panceta grill, queso tybo, aros de cebolla y blen de carne premium",
 },
 {
-    id: 11,
+    id: 3,
     name: "ENTRAÑITA",
     price: 3000,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -96,7 +27,7 @@ export const mock_data = [{
     description: "Blend de carnes premium, panceta grill, rucula y mozzarella",
 },
 {
-    id: 12,
+    id: 4,
     name: "BLUE CHEESE",
     price: 2700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -104,7 +35,7 @@ export const mock_data = [{
     description: "Falta descripcion de Burguer Blue Chesse",
 },
 {
-    id: 13,
+    id: 5,
     name: "AMALAYA BRUT NATURE",
     price: 9000,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -113,7 +44,7 @@ export const mock_data = [{
     
 },
 {
-    id: 14,
+    id: 6,
     name: "SANTA JULIA EXTRA BRUT",
     price: 5400,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -121,7 +52,7 @@ export const mock_data = [{
     description: "Falta descripcio",
 },
 {
-    id: 15,
+    id: 7,
     name: "BARON B EXTRA BRUT",
     price: 21000,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -129,7 +60,7 @@ export const mock_data = [{
     description: "Falta descripcio",
 },
 {
-    id: 16,
+    id: 8,
     name: "BARON B ROSE",
     price: 21000,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -137,7 +68,7 @@ export const mock_data = [{
     description: "Falta descripcio",
 },
 {
-    id: 17,
+    id: 9,
     name: "CHANDON EXTRA BRUT",
     price: 8500,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -145,7 +76,7 @@ export const mock_data = [{
     description: "Falta descripcio",
 },
 {
-    id: 18,
+    id: 10,
     name: "CHANDON DELICE",
     price: 8500,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -153,7 +84,7 @@ export const mock_data = [{
     description: "Falta descripcio",
 },
 {
-    id: 19,
+    id: 11,
     name: "CHANDON ROSE",
     price: 5000,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -161,7 +92,7 @@ export const mock_data = [{
     description: "Falta descripcio",
 },
 {
-    id: 20,
+    id: 12,
     name: "MUMM",
     price: 8500,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -169,7 +100,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 21,
+    id: 13,
     name: "LULU",
     price: 2700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -178,7 +109,7 @@ export const mock_data = [{
     
 },
 {
-    id: 22,
+    id: 14,
     name: "NARANJA, FRUTILLA Y MARACUYA",
     price: 700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -187,7 +118,7 @@ export const mock_data = [{
     
 },
 {
-    id: 23,
+    id: 15,
     name: "JUGO DE LIMON, SYRUP Y GINGER ALE.",
     price: 700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -195,7 +126,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 24,
+    id: 16,
     name: "JUGO DE POMELO, AGUA TONICA Y SYRUP DE FRUTILLA.",
     price: 700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -203,7 +134,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 25,
+    id: 17,
     name: "KANGAROO FRIES",
     price: 1650,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -212,7 +143,7 @@ export const mock_data = [{
     
 },
 {
-    id: 26,
+    id: 18,
     name: "MUZZARELLA STICKS",
     price: 2000,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -220,7 +151,7 @@ export const mock_data = [{
     description: "Bastones de mozzarella con salsa BBQ.",
 },
 {
-    id: 27,
+    id: 19,
     name: "FISH & FRIES",
     price: 2300,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -228,7 +159,7 @@ export const mock_data = [{
     description: "Rabas acompañadas de papas fritas y salsita de mayo chimi.",
 },
 {
-    id: 28,
+    id: 20,
     name: "NACHOS",
     price: 1350,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -238,7 +169,7 @@ export const mock_data = [{
 
 
 {
-    id: 29,
+    id: 21,
     name: "SICILIA",
     price: 3100,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -247,7 +178,7 @@ export const mock_data = [{
     
 },
 {
-    id: 30,
+    id: 22,
     name: "SPECIALITE",
     price: 2600,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -255,7 +186,7 @@ export const mock_data = [{
     description: "Mozzarella, jamon cocido, morrones asados, olivas verdes",
 },
 {
-    id: 31,
+    id: 23,
     name: "CARNAVELERA",
     price: 2300,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -263,7 +194,7 @@ export const mock_data = [{
     description: "Muzzarella con pesto de albahaca.",
 },
 {
-    id: 32,
+    id: 24,
     name: "CALABRESE",
     price: 2300,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -271,7 +202,7 @@ export const mock_data = [{
     description: "Muzzarella, calabrese y olivas negras",
 },
 {
-    id: 33,
+    id: 25,
     name: "COPA DEL OSO",
     price: 700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -280,7 +211,7 @@ export const mock_data = [{
     
 },
 {
-    id: 34,
+    id: 26,
     name: "FLAN ARGENTO",
     price: 700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -288,7 +219,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 35,
+    id: 27,
     name: "TIRAMISU",
     price: 1250,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -296,7 +227,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 36,
+    id: 28,
     name: "CHOCOTORTA",
     price: 700,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -305,7 +236,7 @@ export const mock_data = [{
 },
 
 {
-    id: 37,
+    id: 29,
     name: "AMERICAN MIX",
     price: 4980,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -314,7 +245,7 @@ export const mock_data = [{
     
 },
 {
-    id: 38,
+    id: 30,
     name: "CERVECERA",
     price: 5000,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -322,7 +253,7 @@ export const mock_data = [{
     description: "Jamon crudo, queso tybo, jamon cocido, panceta grillada, queso azul, muzzarella, mix de olivas",
 },
 {
-    id: 39,
+    id: 30,
     name: "DEGUSBURGUERS",
     price: 3500,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -330,7 +261,7 @@ export const mock_data = [{
     description: "4 Mini-Burguers: Grizzly, Rock & Roll, Entraña y Bondiola. Acompañado con papas.",
 },
 {
-    id: 40,
+    id: 32,
     name: "AMALAYA MALBEC",
     price: 6500,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -339,7 +270,7 @@ export const mock_data = [{
     
 },
 {
-    id: 41,
+    id: 33,
     name: "AMALAYA TARDIO",
     price: 4800,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -347,7 +278,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 42,
+    id: 34,
     name: "AMALAYA TORRONTES",
     price: 6500,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -355,7 +286,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 43,
+    id: 35,
     name: "AMALAYA ROSE",
     price: 3400,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -363,7 +294,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 44,
+    id: 36,
     name: "SANTA JULIA CHENIN",
     price: 4500,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -371,7 +302,7 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 45,
+    id: 37,
     name: "CAFAYATE MALBEC",
     price: 3100,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
@@ -379,13 +310,11 @@ export const mock_data = [{
     description: "Falta descripcion",
 },
 {
-    id: 46,
+    id: 38,
     name: "CAFAYATE TORRONTES",
     price: 3100,
     img: "https://img.freepik.com/foto-gratis/ensalada-saludable-atun-judias-verdes-tomates-huevos-papas-aceitunas-negras-cerca-recipiente-sobre-mesa_2829-4485.jpg?w=1060&t=st=1701722303~exp=1701722903~hmac=359ef3f76bd136afe54534077c7e4bfe79600876707c4efd4ea7c3b7145ea9d9",
     category: "wines",
     description: "Falta descripcion",
 }
-
-
 ]

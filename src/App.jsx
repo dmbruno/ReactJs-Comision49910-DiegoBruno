@@ -32,7 +32,7 @@ function App() {
         <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
 
         <Route path="*" element={<NotFound />} />
-
+        
       </Routes>
 
       <Footer />

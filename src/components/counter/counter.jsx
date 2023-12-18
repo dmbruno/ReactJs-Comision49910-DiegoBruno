@@ -2,25 +2,34 @@ import { useState } from "react"
 import './counter.css'
 import { Boton } from "../botones/Boton"
 
+
 export const Counter = () => {
 
-    const [contador, setContador] = useState(0)
+    const [counter, setCounter] = useState(0)
 
     const sumar = () => {
-        setContador(contador + 1)
+        setCounter(counter + 1)
     }
+
     const restar = () => {
-        if (contador > 0) {
-            setContador(contador - 1)
+        if (counter > 0) {
+            setCounter(counter - 1)
+
         }
     }
 
-
     return (
-        <div className="flex flex-row mt-4 px-5">
-            <Boton texto="+" onClick={sumar}></Boton>
-            <p className="parrafo flex justify-center py-1 px-3">Cantidad: {contador}</p>
-            <Boton texto="-" onClick={restar}></Boton>
-        </div>
+        <>
+            <div className="flex flex-row mt-4 px-5">
+                <Boton texto="+" onClick={sumar}></Boton>
+                <div>
+                    <p className="parrafo flex justify-center py-1 px-3"> Cantidad: {counter} </p>
+                </div>
+                <Boton texto="-" onClick={restar}></Boton>
+            </div>
+            <div className="mt-4 px-5">
+                <Boton texto={"Agregar al carrito"}></Boton>
+            </div>
+        </>
     )
 }

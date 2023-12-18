@@ -8,7 +8,7 @@ const Item = ({ productos }) => {
     return (
         <section className="container-prod">
             {productos.map((item) => (
-                <ItemCard item={item}/>
+                <ItemCard key={item.id} item={item}/>
             ))}
         </section>
     );

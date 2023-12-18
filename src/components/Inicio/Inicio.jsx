@@ -3,11 +3,11 @@ import { Link } from "react-router-dom"
 
 
 
-export const Inicio = ({item}) => {
+export const Inicio = () => {
 
     return (
-        <div className="bg-yellow-800">
-            <h1 className="text-4xl font-bold text-center text-white bg-gray-800 py-4 tex">BIENVENIDOS A LA CUEVA</h1>
+        <div className="contenedor-menu">
+            <h1 className="titulo-menu text-4xl font-bold text-center text-white bg-gray-800 py-4">BIENVENIDOS A LA CUEVA</h1>
             <div className="contenedor">
                 <Link to={"/menu/pizzas"} className="bg-yellow-200 px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition-shadow font-extrabold text-lg">Pizzas</Link>
                 <Link to={"/menu/tablas"} className="bg-yellow-200 px-4 py-2 rounded-lg shadow-lg hover:shadow-xl transition-shadow font-extrabold text-lg">Tablas</Link>

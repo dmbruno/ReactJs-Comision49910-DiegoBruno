@@ -2,22 +2,33 @@
 
 import { TfiShoppingCart } from "react-icons/tfi";
 import './NavBar.css'
-import { Link } from "react-router-dom";
 
+import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () => {
 
     return (
-        <header className="bg-yellow-900 ">
+        <header className="header">
             <div className="container m-auto py-6 flex justify-between items-center">
                 <div className="contenedor-logo">
-                    <img src="./LogoOso.svg" alt="logo" />
+                    <img src="./LogoOso.svg" alt="logo del oso, aveces sale y aveces no" />
                 </div>
                 <ul className="flex gap-11">
-                    <Link to={"/"}  className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Inicio</Link>
-                    <Link to={"/Menu"}className="text-white text-lg hover:text-black font-bold font-mono cursor-pointer">Menu del Oso</Link>
-                    
+                    <NavLink
+                        to={"/"}
+                        className={({ isActive }) =>
+                            `text-lg hover:text-black font-bold font-mono cursor-pointer ${isActive ? "text-yellow-300" : "text-white "}`
+                        }>Inicio
+                    </NavLink>
+
+                    <NavLink
+                        to={"/Menu"}
+                        className={({ isActive }) =>
+                            `text-lg hover:text-black font-bold font-mono cursor-pointer ${isActive ? "text-yellow-300" : "text-white "}`
+                        }>Menu del Oso
+                    </NavLink>
+
                 </ul>
                 <div className="contenedor-icono cursor-pointer">
                     <TfiShoppingCart />

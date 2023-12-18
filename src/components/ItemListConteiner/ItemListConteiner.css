@@ -1,5 +1,9 @@
-.conteiner-cards{
-    width: 20%;
-    padding: 1.25rem;
-    height: 21.875rem;
+
+
+
+.contenedor-cartas{
+    background: linear-gradient(131deg, rgba(128,178,207,1) 51%, rgba(252,252,252,0.968207351299895) 100%); 
 }
+
+
+

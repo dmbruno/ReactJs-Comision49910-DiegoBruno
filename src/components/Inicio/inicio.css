@@ -4,3 +4,13 @@
     gap: 10px;
     padding: 10px 1.5625rem;
 }
+
+.contenedor-menu{
+    background: linear-gradient(131deg, rgba(128,178,207,1) 51%, rgba(252,252,252,0.968207351299895) 100%); 
+}
+
+.titulo-menu{
+    background: linear-gradient(131deg, rgba(128,178,207,1) 51%, rgba(252,252,252,0.968207351299895) 100%); 
+}
+
+
