@@ -4,14 +4,16 @@
 import { Link } from "react-router-dom"
 
 import './ItemCard.css'
+import { BotonAtras } from "../botones/BotonAtras"
 
 
 
 export const ItemCard = ({ item }) => {
     return (
             
-            <div className="contenedor-card rounded bg-white h-auto">
+        <div className="contenedor-card rounded bg-white h-auto">
                 <article className="container-article flex flex-col items-center">
+                <BotonAtras/>
                     <div className="portada flex-1">
                         <img className="img rounded" src={item.img} alt="foto de plato" />
                     </div>

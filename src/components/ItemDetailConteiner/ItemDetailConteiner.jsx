@@ -15,7 +15,6 @@ export const ItemDetailConteiner = () => {
     
 
     useEffect(() => {
-
         setLoading(true)
         pedirDatos()
             .then((data) => {

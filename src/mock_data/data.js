@@ -23,7 +23,6 @@ export const mock_data = [{
     name: "ENTRAÑITA",
     price: 3000,
     img: "https://media.istockphoto.com/id/1412706551/es/foto/hamburguesa-en-una-mesa-de-madera-oscura.webp?s=2048x2048&w=is&k=20&c=4GgUuq1RSnLAl7eg8JspGnT3w6qPFJW4LijvMUTnqKA=",
-    
     category: "burguers",
     description: "Blend de carnes premium, panceta grill, rucula y mozzarella",
 },
@@ -215,7 +214,7 @@ export const mock_data = [{
     id: 26,
     name: "FLAN ARGENTO",
     price: 700,
-    img: "https://www.istockphoto.com/es/foto/pud%C3%ADn-de-queso-gm1176622784-328132189",
+    img: "https://images.unsplash.com/photo-1684456156705-5014341fc700?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     category: "postres",
     description: "Falta descripcion",
 },

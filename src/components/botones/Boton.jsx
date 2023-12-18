@@ -8,3 +8,5 @@ export const Boton = ({texto, onClick}) => {
         </button>
     )
 }
+
+
