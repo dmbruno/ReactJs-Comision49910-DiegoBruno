@@ -21,11 +21,11 @@ export const ItemCard = ({ item }) => {
                         <h3 className="font-extrabold text-center mt-9 font-serif text-3xl">{item.name}</h3>
                         <div className="container-texto">
                             <hr className="m-10" />
-                            <p className="text-blac font-bold font-mono text-center mt-3">Que tiene? : {item.description}</p>
+                            <p className="text-blac font-bold font-mono text-center mt-3">Que tiene?: {item.description}</p>
                         </div>
                     </div>
                     <button className="bg-yellow-200 rounded py-2 px-16 font-mono text-black mt-10 shadow-black">
-                        <Link to={`/item/${item.id}`}>Ver Mas</Link>
+                        <Link to={`/item/${item.id}`}> ¡Ver Mas! </Link>
                     </button>
                 </article>
             </div>
