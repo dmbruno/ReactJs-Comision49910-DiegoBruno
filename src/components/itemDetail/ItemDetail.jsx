@@ -1,17 +1,33 @@
 
 import "./itemDetail.css"
-import { Counter } from "../counter/counter";
+import { useContext, useState } from "react";
+import QuantitySelector from "./QuantitySelector";
+import { CartContext } from "../../Context/CartContext";
 import { useNavigate } from "react-router-dom";
+
+
 
 
 
 
 const ItemDetail = ({ item }) => {
     const navigate = useNavigate()
+    const [cantidad, setCantidad] = useState(1)
+    const { addToCart, isInCart } = useContext(CartContext)
 
-    const handleAtras = () =>{
+    const handleAtras = () => {
         navigate(-1)
     }
+
+    const handleAgregar = () => {
+        const itemToCart = {
+            ...item, 
+            cantidad,
+        }
+        addToCart(itemToCart)
+    }
+
+
 
     return (
         <>
@@ -23,8 +39,25 @@ const ItemDetail = ({ item }) => {
                     <img src={item.img} alt={item.name} />
                     <div className="w-screen">
                         <p className="w-screen py-5 px-5 font-extrabold">{item.description} </p>
-                        <Counter />
-                        <p className="text-xl font-bold px-5 pt-5 mb-5"> Precio: ${item.price}</p>
+                        <p className="text-xl font-bold px-5 pt-2 mb-5"> Precio: ${item.price}</p>
+                        {
+                            isInCart(item.id)
+                                ? <button className="mt-4 flex justify-center text-white rounded font-mono hover:bg-slate-600 py-3 px-6 bg-slate-500">
+                                    Terminar mi compra
+                                </button>
+                                : <>
+                                    <QuantitySelector
+                                        cantidad={cantidad}
+                                        setCantidad={setCantidad}
+                                    />
+                                    <button
+                                        className=" mt-4 flex justify-center text-white rounded font-mono hover:bg-slate-600 py-3 px-6 bg-slate-500"
+                                        onClick={handleAgregar}>
+                                        Agregar al carrito
+                                    </button>
+                                </>
+                        }
+
                     </div>
                 </div>
             </div>

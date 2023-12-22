@@ -1,6 +1,6 @@
 
 
-import { TfiShoppingCart } from "react-icons/tfi";
+import { Carwidget } from './Carwidget';
 import './NavBar.css'
 
 import { NavLink } from "react-router-dom";
@@ -31,7 +31,7 @@ export const NavBar = () => {
 
                 </ul>
                 <div className="contenedor-icono cursor-pointer">
-                    <TfiShoppingCart />
+                    <Carwidget />
                 </div>
             </div>
         </header>

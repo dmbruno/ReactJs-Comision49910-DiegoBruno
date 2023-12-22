@@ -4,7 +4,6 @@ import Item from '../Item/Item'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { pedirDatos } from '../../utils/utils'
-import { Spiner } from '../Loader/Spiner'
 import { Loader } from '../Loader/Loader'
 
 
