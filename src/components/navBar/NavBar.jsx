@@ -9,31 +9,30 @@ import { NavLink } from "react-router-dom";
 export const NavBar = () => {
 
     return (
-        <header className="header">
-            <div className="container m-auto py-6 flex justify-between items-center">
-                <div className="contenedor-logo">
+        
+            <div className="flex items-center justify-between gap-5 px-5 bg-amber-500">
+                <div className="">
                     <img src="./LogoOso.svg" alt="logo del oso, aveces sale y aveces no" />
                 </div>
-                <ul className="flex gap-11">
+                <ul className=" flex gap-5">
                     <NavLink
                         to={"/"}
                         className={({ isActive }) =>
-                            `text-lg hover:text-black font-bold font-mono cursor-pointer ${isActive ? "text-yellow-300" : "text-white "}`
+                            `flex space-x-4  ${isActive ? "text-orange-600 font-bold" : "text-black font-bold"}`
                         }>Inicio
                     </NavLink>
-
                     <NavLink
                         to={"/Menu"}
                         className={({ isActive }) =>
-                            `text-lg hover:text-black font-bold font-mono cursor-pointer ${isActive ? "text-yellow-300" : "text-white "}`
+                            `flex space-x-4 ${isActive ? "text-orange-600 font-bold" : "text-black font-bold"}`
                         }>Menu del Oso
                     </NavLink>
 
                 </ul>
-                <div className="contenedor-icono cursor-pointer">
+                <div className="cursor-pointer text-[16px]">
                     <Carwidget />
                 </div>
             </div>
-        </header>
+        
     )
 }

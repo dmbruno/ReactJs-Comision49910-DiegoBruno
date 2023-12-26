@@ -5,9 +5,6 @@ import { UserContext } from "../../Context/userContext"
 
 
 
-
-
-
 export const CartView = () => {
 
     const { cart, totalCart, clearCart, removeItem } = useContext(CartContext)
