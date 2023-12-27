@@ -19,39 +19,41 @@ function App() {
 
   return (
 
+    <div className='px-3'>
 
-    <UserProvider>
-
-
-      <CartProvider>
-
-        <BrowserRouter>
-
-          <NavBar />
-
-          <Routes>
-
-            <Route path="/" element={<Inicio />} />
-
-            <Route path="/menu" element={<ItemListConteiner />} />
-            <Route path="/menu/:categoryId" element={<ItemListConteiner />} />
-
-            <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
-            <Route path="/cart" element={<CartView />} />
-
-            <Route path="*" element={<NotFound />} />
-
-          </Routes>
-
-          <Footer />
+      <UserProvider>
 
 
+        <CartProvider>
 
-        </BrowserRouter>
+          <BrowserRouter>
 
-      </CartProvider>
-    </UserProvider>
+            <NavBar />
 
+            <Routes>
+
+              <Route path="/" element={<Inicio />} />
+
+              <Route path="/menu" element={<ItemListConteiner />} />
+              <Route path="/menu/:categoryId" element={<ItemListConteiner />} />
+
+              <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
+              <Route path="/cart" element={<CartView />} />
+
+              <Route path="*" element={<NotFound />} />
+
+            </Routes>
+
+            <Footer />
+
+
+
+          </BrowserRouter>
+
+        </CartProvider>
+      </UserProvider>
+
+    </div>
   )
 }
 
