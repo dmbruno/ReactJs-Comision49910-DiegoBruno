@@ -13,7 +13,7 @@ export const BotonAtras = () => {
     }
     return (
 
-        <button onClick={handleAtras} className="bg-yellow-200 font-mono text-black mt-10 shadow-black px-3 py-1 m-4 rounded">
+        <button onClick={handleAtras} className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             Atras...
         </button>
     )

@@ -10,26 +10,22 @@ import { BotonAtras } from "../botones/BotonAtras"
 
 export const ItemCard = ({ item }) => {
     return (
-            
-        <div className="contenedor-card rounded bg-white h-auto">
-                <article className="container-article flex flex-col items-center">
-                <BotonAtras/>
-                    <div className="portada flex-1">
-                        <img className="img rounded" src={item.img} alt="foto de plato" />
-                    </div>
-                    <div className="contenedor-info flex-1 relative">
-                        <h3 className="font-extrabold text-center mt-9 font-serif text-3xl">{item.name}</h3>
-                        <div className="container-texto">
-                            <hr className="m-10" />
-                            <p className="text-blac font-bold font-mono text-center mt-3">Que tiene?: {item.description}</p>
-                        </div>
-                    </div>
-                    <button className="bg-yellow-200 rounded py-2 px-16 font-mono text-black mt-10 shadow-black">
-                        <Link to={`/item/${item.id}`}> ¡Ver Mas! </Link>
-                    </button>
-                </article>
+        
+        <article className="w-80 border rounded-xl overflow-hidden shadow-lg mb-4">
+            <h3 className="font-bold text-xl mb-2 text-center mt-2">{item.name}</h3>
+            <div className="">
+                <img className="object-contain h-32 w-96" src={item.img} alt="foto de plato" />
             </div>
-            
+            <div className="m-4">
+                <hr className="border-t" />
+            </div>
+            <div className="flex justify-between">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                    <Link to={`/item/${item.id}`}> ¡Ver Mas! </Link>
+                </button>
+                <BotonAtras />
+            </div>
+        </article>
     )
 }
 

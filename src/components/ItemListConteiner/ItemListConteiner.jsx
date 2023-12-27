@@ -33,16 +33,16 @@ export const ItemListConteiner = () => {
 
     return (
         <>
-            <div className="contenedor-cartas px-5 py-5">
-                <h3 className='font-extrabold text-center font-mono text-4xl py-4'>Menu del Oso</h3>
-                <hr className='m-7' />
-
-                {
-                    loading 
-                        ? (<Loader />
-                        ):( <Item productos={productos} />
-                )}
-            </div>
+            
+                <h3 className='font-extrabold font-mono text-4xl py-4 text-center'>Menu del Oso</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-4 place-items-center">
+                    {
+                        loading
+                            ? (<Loader />
+                            ) : (<Item productos={productos} />
+                            )}
+                </div>
+            
         </>
     )
 }

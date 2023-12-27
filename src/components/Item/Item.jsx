@@ -1,14 +1,12 @@
 
-
-import './estilosItem.css'
 import { ItemCard } from "../ItemCard/ItemCard";
 
 const Item = ({ productos }) => {
 
     return (
-        <section className="container-prod">
+        <section className="grid grid-cols-1 sm:grid-cols-4 gap-5">
             {productos.map((item) => (
-                <ItemCard key={item.id} item={item}/>
+                <ItemCard key={item.id} item={item} />
             ))}
         </section>
     );
