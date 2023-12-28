@@ -12,9 +12,9 @@ const QuantitySelector = ({ cantidad, setCantidad }) => {
     }
 
     return (
-        <div className="flex gap-4 items-center">
+        <div className="flex gap-4 py-4">
             <Boton texto={"-"} onClick={handleRestar}></Boton>
-            <span>{cantidad}</span>
+            <span className="flex items-center font-bold">{cantidad}</span>
             <Boton texto={"+"} onClick={handleSumar}></Boton>
         </div>
     );

@@ -41,11 +41,11 @@
     },
     {
         "id": 6,
-        "name": "SANTA JULIA EXTRA BRUT",
+        "name": "SANTA JULIA EB",
         "price": 5400,
         "img": "https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "category": "champagneEspumantes",
-        "description": "Falta descripcio"
+        "description": "SANTA JULIA EXTRA BRUT"
     },
     {
         "id": 7,
@@ -105,27 +105,27 @@
     },
     {
         "id": 14,
-        "name": "NARANJA, FRUTILLA Y MARACUYA",
+        "name": "Mocktail Naranja",
         "price": 700,
         "img": "https://images.unsplash.com/photo-1607622750671-6cd9a99eabd1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "category": "mocktails",
-        "description": "Falta descripcion"
+        "description": "NARANJA, FRUTILLA Y MARACUYA"
     },
     {
         "id": 15,
-        "name": "JUGO DE LIMON, SYRUP Y GINGER ALE.",
+        "name": "Mocktail Limon",
         "price": 700,
         "img": "https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "category": "mocktails",
-        "description": "Falta descripcion"
+        "description": "JUGO DE LIMON, SYRUP Y GINGER ALE."
     },
     {
         "id": 16,
-        "name": "JUGO DE POMELO, AGUA TONICA Y SYRUP DE FRUTILLA.",
+        "name": "Mocktail Frutilla",
         "price": 700,
         "img": "https://images.unsplash.com/photo-1609951651556-5334e2706168?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "category": "mocktails",
-        "description": "Falta descripcion"
+        "description": "JUGO DE POMELO, AGUA TONICA Y SYRUP DE FRUTILLA."
     },
     {
         "id": 17,

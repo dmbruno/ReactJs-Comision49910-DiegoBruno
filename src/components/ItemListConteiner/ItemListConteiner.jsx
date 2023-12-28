@@ -1,5 +1,4 @@
 
-import './ItemListConteiner.css'
 import Item from '../Item/Item'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
@@ -35,7 +34,7 @@ export const ItemListConteiner = () => {
         <>
             
                 <h3 className='font-extrabold font-mono text-4xl py-4 text-center'>Menu del Oso</h3>
-                <div className="grid grid-cols-1 sm:grid-cols-4 place-items-center">
+                <div className="grid grid-cols-1">
                     {
                         loading
                             ? (<Loader />
