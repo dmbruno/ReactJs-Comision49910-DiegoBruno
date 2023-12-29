@@ -24,7 +24,6 @@ function App() {
 
       <UserProvider>
 
-
         <CartProvider>
 
           <BrowserRouter>
@@ -52,6 +51,7 @@ function App() {
           </BrowserRouter>
 
         </CartProvider>
+
       </UserProvider>
 
     </div>

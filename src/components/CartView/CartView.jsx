@@ -22,12 +22,12 @@ export const CartView = () => {
                 {
                     cart.map((item) => (
                         <li key={item.id} className="flex gap-5 py-5">
-                            <div className="w-48 h-48"> 
-                                <img src={item.img} alt="imagen de compra" className="" />
+                            <div className=" container w-48 h-48"> 
+                                <img src={item.img} alt="imagen de compra" className="object-fill w-full h-full" />
                             </div>
                             <div>
-                                <h3 className="text-3xl mb-3">{item.name}</h3>
-                                <strong><p className="text-xl mb-3">$ {item.price} x unidad</p></strong>
+                                <h3 className="text-xl font-bold sm:text-2xl sm:font-bold mb-3 text-orange-700">{item.name}</h3>
+                                <strong><p className="mb-3">$ {item.price} x unidad</p></strong>
                                 <p>Cantidad: {item.cantidad}</p>
                                 <p className="mb-3">TOTAL: $ {item.price * item.cantidad}</p>
                                 <button onClick={() => removeItem(item.id)}>
