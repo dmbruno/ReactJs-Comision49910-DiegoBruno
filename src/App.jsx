@@ -11,7 +11,7 @@ import { Inicio } from './components/Inicio/Inicio'
 import { ItemDetailConteiner } from './components/ItemDetailConteiner/ItemDetailConteiner'
 import { CartProvider } from './Context/CartContext'
 import { CartView } from './components/CartView/CartView'
-
+import { UserProvider } from './Context/userContext'
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
 
     <div className='px-3'>
 
-      {/* <UserProvider> */}
+      <UserProvider>
 
 
         <CartProvider>
@@ -52,7 +52,7 @@ function App() {
           </BrowserRouter>
 
         </CartProvider>
-      {/* </UserProvider> */}
+      </UserProvider>
 
     </div>
   )
