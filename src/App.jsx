@@ -22,7 +22,7 @@ function App() {
 
     <div className='px-3'>
 
-      <UserProvider>
+      {/* <UserProvider> */}
 
 
         <CartProvider>
@@ -52,7 +52,7 @@ function App() {
           </BrowserRouter>
 
         </CartProvider>
-      </UserProvider>
+      {/* </UserProvider> */}
 
     </div>
   )
