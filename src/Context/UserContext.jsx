@@ -2,7 +2,7 @@ import { createContext, useState } from "react";
 
 
 
-export const UserContext = createContext()
+export const userContext = createContext()
 
 export const UserProvider = ({children}) =>{
     const [user, setUser] = useState({
@@ -10,8 +10,8 @@ export const UserProvider = ({children}) =>{
         toke: "1234"
     })
     return(
-        <UserContext.Provider value={{user}}>
+        <userContext.Provider value={{user}}>
             {children}
-        </UserContext.Provider>
+        </userContext.Provider>
     )
 }
