@@ -1,15 +1,17 @@
-import { createContext, useState } from "react";
+import { useState } from "react";
+import { createContext } from "react";
+
 
 
 
 export const UserContext = createContext()
 
-export const UserProvider = ({ children }) => {
+export const UserProvider = ({children}) =>{
     const [user, setUser] = useState({
-        email: "dmbruno61@gmail.commmm",
-        toke: "1234"
+        email:"dmbruno61@gmail.com",
+        token: "1234"
     })
-    return (
+    return(
         <UserContext.Provider value={{
             user,
             setUser
@@ -20,4 +22,5 @@ export const UserProvider = ({ children }) => {
 }
 
 
-//cambien las minusculas del userContext , lo tenia con mayusculas
+
+
