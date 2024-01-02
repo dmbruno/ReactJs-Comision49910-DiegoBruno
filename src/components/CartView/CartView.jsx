@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "../../Context/CartContext"
 import trashIcon from "../../assets/trashIcon.svg"
+import { UserContext } from "../../Context/userContext"
 
 
 
@@ -8,7 +9,7 @@ import trashIcon from "../../assets/trashIcon.svg"
 export const CartView = () => {
 
     const { cart, totalCart, clearCart, removeItem } = useContext(CartContext)
-    
+    const { user } = useContext(UserContext)
 
 
     return (
@@ -22,7 +23,7 @@ export const CartView = () => {
                 {
                     cart.map((item) => (
                         <li key={item.id} className="flex gap-5 py-5">
-                            <div className=" container w-48 h-48"> 
+                            <div className=" container w-48 h-48">
                                 <img src={item.img} alt="imagen de compra" className="object-fill w-full h-full" />
                             </div>
                             <div>
