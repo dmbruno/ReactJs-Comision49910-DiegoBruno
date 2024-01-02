@@ -4,7 +4,7 @@ import { ItemCard } from "../ItemCard/ItemCard";
 const Item = ({ productos }) => {
 
     return (
-        <section className="grid grid-cols-1 sm:grid-cols-4 gap-5 lg:flex lg:justify-around">
+        <section className="grid grid-cols-1 sm:grid-cols-4 gap-5 xl:grid-cols-4 lg:justify-around">
             {productos.map((item) => (
                 <ItemCard key={item.id} item={item} />
             ))}
