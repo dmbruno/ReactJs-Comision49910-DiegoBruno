@@ -8,7 +8,7 @@ export const Inicio = () => {
     return (
         <div className="bg-amber-500">
             <h1 className="italic font-bold from-neutral-700 text-center p-5 sm:text-3xl lg:text-center lg:text-5xl">Menu del Oso</h1>
-            <div className="flex gap-3 sm:gap-7">
+            <div className="flex gap-2 sm:gap-7">
                 <div className="w-1/2 gap-1 grid grid-cols-1 mb-3 sm:w-1/3">
                     <Link to={"/menu/pizzas"} className="rounded-r-lg p-3 col-span-1 px-2 bg-white font-bold text-[11px] flex justify-center items-center hover:bg-gray-200 hover:text-[12px] h-5 sm:p-6 sm:text-[13px] xl:text-[25px]">Pizzas</Link>
                     <Link to={"/menu/tablas"} className="rounded-r-lg p-3 col-span-1 px-2 bg-white font-bold text-[11px] flex justify-center items-center hover:bg-gray-200 hover:text-[12px] h-5 sm:p-6 sm:text-[13px] xl:text-[25px]">Tablas</Link>

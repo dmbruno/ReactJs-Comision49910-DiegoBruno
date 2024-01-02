@@ -23,7 +23,7 @@ export const CartView = () => {
                 {
                     cart.map((item) => (
                         <li key={item.id} className="flex gap-5 py-5">
-                            <div className="container w-48 h-48 xl:w-1/3 xl:h-1/3">
+                            <div className="container w-48 h-48 xl:w-1/3">
                                 <img src={item.img} alt="imagen de compra" className="object-fill w-full h-full" />
                             </div>
                             <div>
