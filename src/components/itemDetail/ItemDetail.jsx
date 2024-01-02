@@ -28,11 +28,11 @@ const ItemDetail = ({ item }) => {
         <>
             <div className="flex flex-col items-center bg-white shadow-md rounded-lg p-4">
                 <button className="mb-4 py-1 px-4 border-dashed border-2 border-indigo-600 rounded-lg hover:bg-yellow-700" onClick={handleAtras}>Atras</button>
-                <h3 className="font-semibold text-lg mb-2">{item.name}</h3>
+                <h3 className="font-semibold text-lg mb-2 lg:text-4xl">{item.name}</h3>
                 <hr className="border-gray-200 w-full mb-4" />
                 <div className="w-full sm:flex">
                     <img className="object-contain h-48 w-full mb-4" src={item.img} alt={item.name} />
-                    <div className="px-4">
+                    <div className="px-4 lg:w-full">
                         <div>
                             <p className="text-gray-700 mb-2"> Descripcion: {item.description} </p>
                             <p className="text-gray-700 mb-2 font-bold"> Precio: ${item.price}</p>
