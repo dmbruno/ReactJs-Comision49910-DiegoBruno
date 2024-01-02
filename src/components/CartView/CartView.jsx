@@ -1,14 +1,14 @@
 import { useContext } from "react"
 import { CartContext } from "../../Context/CartContext"
 import trashIcon from "../../assets/trashIcon.svg"
-import { UserContext } from "../../Context/userContext"
+
 
 
 
 export const CartView = () => {
 
     const { cart, totalCart, clearCart, removeItem } = useContext(CartContext)
-    const { user } = useContext(UserContext)
+    
 
 
     return (
