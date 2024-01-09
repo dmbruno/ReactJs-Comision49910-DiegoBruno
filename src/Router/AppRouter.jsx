@@ -19,14 +19,15 @@ import { Footer } from "../components/footer/Footer"
 
 
 export const AppRouter = () => {
+
     const { user } = useContext(UserContext)
 
 
     return (
+
+
         <BrowserRouter>
-
             <NavBar />
-
             {
                 user.logged
                     ? <Routes>
@@ -36,7 +37,7 @@ export const AppRouter = () => {
                         <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
                         <Route path="/cart" element={<CartView />} />
                         <Route path="/CheckOut" element={<CheckOut />} />
-                        <Route path="*" element={<NotFound />} />
+                        <Route path="*" element={<Inicio />} />
                     </Routes> 
 
                     : <Routes>
@@ -44,9 +45,7 @@ export const AppRouter = () => {
                         <Route path="*" element={<Navigate to="/login" />} />
                     </Routes>
             }
-
             <Footer />
-
         </BrowserRouter>
     )
 }

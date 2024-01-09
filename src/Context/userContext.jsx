@@ -1,7 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/config";
-import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { createUserWithEmailAndPassword , signInWithEmailAndPassword} from "firebase/auth";
+import { onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 
 export const UserContext = createContext()
 
@@ -16,33 +15,39 @@ export const UserProvider = ({ children }) => {
         logged: false,
         uid: null
     })
+    console.log(user);
 
-    const login = (values) => { 
+    const login = (values) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
-        .then((userCredential) => {
-
-            const user = userCredential.user
-
-            setUser({
-                email: user.email,
-                uid: user.uid,
-                logged: true
-            })
-        })
-
     }
 
     const register = (values) => {
         createUserWithEmailAndPassword(auth, values.email, values.password)
-            .then((userCredential) => {
-                const user = userCredential.user
+    }
+
+    const logout = () =>{
+        signOut(auth)
+    }
+
+    useEffect(() => {
+        onAuthStateChanged(auth, (user) => {
+            if (user) {
+
                 setUser({
                     email: user.email,
                     uid: user.uid,
                     logged: true
                 })
-            })
-    }
+            } else {
+                setUser({
+                    email: null,
+                    logged: false,
+                    uid: null
+                })
+            }
+        })
+    }, [])
+
 
 
     return (
@@ -50,7 +55,8 @@ export const UserProvider = ({ children }) => {
             user,
             login,
             googleLogin,
-            register
+            register,
+            logout
         }}>
             {children}
         </UserContext.Provider>

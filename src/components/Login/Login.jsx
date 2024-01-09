@@ -48,18 +48,19 @@ export const Login = () => {
 
                 />
 
-                <button
-                    onClick={() => register(values)}
-                    className="w-80 p-2 bg-gray-500 text-white rounded font-bold hover:bg-blue-500"
-                    type="submit">Ingresar
-                </button>
+                
 
             </form>
-            <div className="flex items-center justify-center z-50 m-2">
+            <div className="flex flex-col gap-4 items-center justify-center z-50 m-2">
                 <button
                     className="w-80 p-2 bg-gray-500 text-white rounded font-bold hover:bg-blue-500"
                     onClick={googleLogin}>
                     Ingresar con Google
+                </button>
+                <button
+                    onClick={() => register(values)}
+                    className="w-80 p-2 bg-gray-500 text-white rounded font-bold hover:bg-blue-500"
+                    type="submit">Ingresar
                 </button>
             </div>
         </div>

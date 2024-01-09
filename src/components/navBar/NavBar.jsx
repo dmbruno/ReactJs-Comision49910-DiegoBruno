@@ -7,9 +7,13 @@ import { NavLink } from "react-router-dom";
 
 
 export const NavBar = () => {
+    
 
     return (
             <div className="flex items-center justify-between gap-5 bg-amber-500">
+                {
+                    
+                }
                 <div>
                     <img src="./LogoOso.svg" alt="logo del oso, aveces sale y aveces no" />
                 </div>
