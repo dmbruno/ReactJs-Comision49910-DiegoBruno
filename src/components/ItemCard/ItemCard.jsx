@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom"
-import './ItemCard.css'
 import { BotonAtras } from "../botones/BotonAtras"
 
 

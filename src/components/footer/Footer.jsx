@@ -17,8 +17,8 @@ export const Footer = () => {
                 }
             </div>
             <div className="flex flex-row">
-                <h3 className="text-white font-bold flex items-center hover:text-yellow-800 m-4 cursor-pointer sm:text-2xl">Quienes Somos</h3>
-                <h3 className="text-white font-bold flex items-center hover:text-yellow-800 m-4 cursor-pointer sm:text-2xl">Contactanos</h3>
+                <h3 className="text-black font-bold flex items-center hover:text-yellow-800 m-4 cursor-pointer sm:text-2xl">Quienes Somos</h3>
+                <h3 className="text-black font-bold flex items-center hover:text-yellow-800 m-4 cursor-pointer sm:text-2xl">Contactanos</h3>
             </div>
         </div>
     )
