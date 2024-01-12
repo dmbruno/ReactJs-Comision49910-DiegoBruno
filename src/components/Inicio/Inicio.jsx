@@ -4,11 +4,7 @@ import { Link } from "react-router-dom"
 
 
 export const Inicio = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggleMenu = () =>{
-        setIsOpen(!isOpen)
-    }
+    
 
     return (
         <div className="">
