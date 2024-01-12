@@ -30,8 +30,14 @@ export const NavBar = () => {
                             `flex space-x-4 sm:text-2xl ${isActive ? "text-orange-600 font-bold" : "text-black font-bold"}`
                         }>Menu del Oso
                     </NavLink>
+                    <NavLink
+                        to={"/checkoutadmin"}
+                        className={({ isActive }) =>
+                            `flex space-x-4 sm:text-2xl ${isActive ? "text-orange-600 font-bold" : "text-black font-bold"}`
+                        }>*Admin*
+                    </NavLink>
                 </ul>
-                <div className="cursor-pointer text-[16px] pr-3">
+                <div className="cursor-pointer text-[25px] pr-3">
                     <Carwidget />
                 </div>
             </div>

@@ -1,21 +1,18 @@
 import { createContext, useEffect, useState } from "react";
-import { auth } from "../firebase/config";
-import { onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import { auth, provider } from "../firebase/config";
+import { signInWithPopup, signOut, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+
 
 export const UserContext = createContext()
 
-export const UserProvider = ({ children }) => {
-
-    const googleLogin = () => {
-        const provider = new GoogleAuthProvider();
-        signInWithPopup(auth, provider)
-    }
+export const UserProvider = ({children}) => {
     const [user, setUser] = useState({
         email: null,
         logged: false,
         uid: null
     })
-    console.log(user);
+
+    
 
     const login = (values) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
@@ -25,14 +22,18 @@ export const UserProvider = ({ children }) => {
         createUserWithEmailAndPassword(auth, values.email, values.password)
     }
 
-    const logout = () =>{
+    const logout = () => {
         signOut(auth)
+    }
+
+    const googleLogin = () => {
+        signInWithPopup(auth, provider)
     }
 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
+            
             if (user) {
-
                 setUser({
                     email: user.email,
                     uid: user.uid,
@@ -41,23 +42,15 @@ export const UserProvider = ({ children }) => {
             } else {
                 setUser({
                     email: null,
-                    logged: false,
-                    uid: null
-                })
+                    uid: null,
+                    logged: false
+                }) 
             }
         })
     }, [])
 
-
-
     return (
-        <UserContext.Provider value={{
-            user,
-            login,
-            googleLogin,
-            register,
-            logout
-        }}>
+        <UserContext.Provider value={{user, googleLogin, login, register, logout}}>
             {children}
         </UserContext.Provider>
     )

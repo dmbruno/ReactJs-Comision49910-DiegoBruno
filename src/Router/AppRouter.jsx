@@ -10,6 +10,7 @@ import { CartView } from "../components/CartView/CartView"
 import { CheckOut } from "../components/Checkout/CheckOut"
 import NotFound from "../components/not-found/NotFound"
 import { Footer } from "../components/footer/Footer"
+import { CheckOutAdmin } from "../components/Checkout/CheckOutAdmin"
 
 
 
@@ -37,6 +38,7 @@ export const AppRouter = () => {
                         <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
                         <Route path="/cart" element={<CartView />} />
                         <Route path="/CheckOut" element={<CheckOut />} />
+                        <Route path="/checkoutadmin" element={<CheckOutAdmin />} /> 
                         <Route path="*" element={<Inicio />} />
                     </Routes> 
 

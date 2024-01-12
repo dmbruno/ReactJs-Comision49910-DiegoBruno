@@ -3,14 +3,19 @@ import { UserContext } from "../../Context/userContext"
 
 
 export const Login = () => {
-    const { login, googleLogin, register } = useContext(UserContext)
+    
+    const { login, googleLogin, register} = useContext(UserContext)
 
     const [values, setValues] = useState({
+        nombre: "",
         email: "",
         password: "",
     });
 
+    
+
     const handleInputChange = (e) => {
+        e.preventDefault()
         setValues({
             ...values,
             [e.target.name]: e.target.value,
@@ -47,8 +52,6 @@ export const Login = () => {
                     name="password"
 
                 />
-
-                
 
             </form>
             <div className="flex flex-col gap-4 items-center justify-center z-50 m-2">
