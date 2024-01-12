@@ -38,7 +38,7 @@ export const AppRouter = () => {
                         <Route path="/item/:itemId" element={<ItemDetailConteiner />} />
                         <Route path="/cart" element={<CartView />} />
                         <Route path="/CheckOut" element={<CheckOut />} />
-                        <Route path="/checkoutadmin" element={<CheckOutAdmin />} /> 
+                        <Route path="/checkoutadmin" element={<CheckOutAdmin />}/>
                         <Route path="*" element={<Inicio />} />
                     </Routes> 
 

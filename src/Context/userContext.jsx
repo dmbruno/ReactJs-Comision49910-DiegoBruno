@@ -5,14 +5,14 @@ import { signInWithPopup, signOut, onAuthStateChanged, createUserWithEmailAndPas
 
 export const UserContext = createContext()
 
-export const UserProvider = ({children}) => {
+export const UserProvider = ({ children }) => {
     const [user, setUser] = useState({
         email: null,
         logged: false,
         uid: null
     })
 
-    
+
 
     const login = (values) => {
         signInWithEmailAndPassword(auth, values.email, values.password)
@@ -32,7 +32,7 @@ export const UserProvider = ({children}) => {
 
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
-            
+
             if (user) {
                 setUser({
                     email: user.email,
@@ -44,13 +44,20 @@ export const UserProvider = ({children}) => {
                     email: null,
                     uid: null,
                     logged: false
-                }) 
+                })
             }
         })
     }, [])
 
     return (
-        <UserContext.Provider value={{user, googleLogin, login, register, logout}}>
+        <UserContext.Provider value={{
+            user,
+            googleLogin,
+            login,
+            register,
+            logout
+
+        }}>
             {children}
         </UserContext.Provider>
     )

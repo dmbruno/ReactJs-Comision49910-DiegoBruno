@@ -43,16 +43,17 @@ export const CheckOutAdmin = () => {
 return (
     <div>
         <h2 className="text-4xl text-center p-5 font-semibold">Panel de Administrador</h2>
+        
         <div className="p-5 bg-yellow-300 mb-3">
             <div className="flex flex-wrap bg-white border rounded-lg">
-                <div className="w-full md:w-1/2 p-4">
+                <div className="w-1/2 p-4">
                     <h2 className="font-bold mb-2 text-center text-2xl">Pedidos de Cocina</h2>
                     <hr className="mb-3"/>
                     {data.filter(item => item.sector === 'cocina').map((item) => (
-                        <div className="grid grid-cols-[2fr,1fr,1fr,1fr] gap-4">
+                        <div className="grid grid-cols-[4fr,1fr,1fr,1fr] gap-4">
                             <h2 className=""> Pedido: <strong>{item.name}</strong></h2>
                             <p className="text-center">C: {item.cantidad}</p>
-                            <h2 className="text-left">TOTAL: $ {item.cantidad * item.price}</h2>
+                            <h2 className="text-left">TOTAL:$ {item.cantidad * item.price}</h2>
                             <p className="text-center">MESA QR</p>
                         </div>
                     ))}
@@ -61,10 +62,10 @@ return (
                     <h2 className="font-bold mb-2 text-center text-2xl">Pedidos de Barra</h2>
                     <hr className="mb-3"/>
                     {data.filter(item => item.sector === 'barra').map((item) => (
-                        <div className="grid grid-cols-[2fr,1fr,1fr,1fr] gap-4">
+                        <div className="grid grid-cols-[4fr,1fr,1fr,1fr] gap-4">
                             <h2>Pedido: <strong>{item.name}</strong></h2>
                             <h2 className="text-center">C: {item.cantidad}</h2>
-                            <h2 className="text-left">TOTAL: $ {item.cantidad * item.price}</h2>
+                            <h2 className="text-left">TOTAL:$ {item.cantidad * item.price}</h2>
                             <h2 className="text-center">MESA QR</h2> {/* traerme la validacion del qr de cada mesa */}
                         </div>
                     ))}
