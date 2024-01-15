@@ -15,7 +15,7 @@ export const CartView = () => {
 
     return (
 
-        <section className="m-auto mt-8">
+        <section className="m-auto mt-8 bg-slate-200 rounded">
             <p className="font-mono text-center sm:text-2xl text-orange-900">Bienvenido {user.email}</p>
             <h2 className="text-2xl font-mono py-6 sm:text-4xl">Tu Pedido</h2>
             <hr />

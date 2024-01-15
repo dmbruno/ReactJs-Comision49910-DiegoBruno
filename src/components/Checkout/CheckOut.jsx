@@ -4,7 +4,7 @@ import { db } from "../../firebase/config"
 import { collection, addDoc } from "firebase/firestore"
 import Swal from 'sweetalert2'
 import { UserContext } from "../../Context/userContext";
-import { Link } from "react-router-dom";
+
 
 
 
@@ -57,10 +57,11 @@ export const CheckOut = () => {
     if (orderId) { // este es un early return que si existe la orden entonces se muestra lo sigueinte (se puede hacer en otro componente)
         return (
             <>
-                <div className="container m-auto mt-10 mb-5 p-7">
+                <div className="container m-auto mt-10 mb-5 p-7 bg-slate-200">
                     <h2 className="text-3xl font-bold">Gracias por tu compra</h2>
                     <hr />
                     <p>pedido confirmado:{orderId}</p>
+                    
                 </div>
             </>
         );
@@ -106,5 +107,3 @@ export const CheckOut = () => {
 }
 
 
-//de esta manera si existe la orderID entonces se crea y se guarda la orden en firebase con el metodo addDoc y sino se renderiza
-//el formulario para completar datos 
