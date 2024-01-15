@@ -26,7 +26,7 @@ const ItemDetail = ({ item }) => {
 
     return (
         <>
-            <div className="flex flex-col items-center sshadow-md rounded-lg p-4 bg-slate-300">
+            <div className="flex flex-col items-center sshadow-md rounded-lg p-4 bg-slate-300 mt-2 mb-2">
                 <button className="mb-4 py-1 px-4 border-dashed border-2 border-indigo-600 rounded-lg hover:bg-yellow-700" onClick={handleAtras}>Atras</button>
                 <h3 className="font-bold text-lg mb-2 lg:text-4xl">{item.name}</h3>
                 <hr className="border-gray-200 w-full mb-4" />

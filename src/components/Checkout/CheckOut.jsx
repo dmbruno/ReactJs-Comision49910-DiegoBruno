@@ -75,7 +75,7 @@ export const CheckOut = () => {
 
         <div>
             <div className="container m-auto mt-10 mb-5">
-                <h2 className="text-3xl font-semibold">Envia tu Pedido</h2>
+                <h2 className="text-3xl font-semibold mb-2">Envia tu Pedido</h2>
                 <hr />
                 <form onSubmit={handleSubmit} className="flex flex-col gap-4 mt-4 max-w-md">
                     <input
