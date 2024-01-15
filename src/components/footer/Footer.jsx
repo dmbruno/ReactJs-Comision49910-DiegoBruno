@@ -11,8 +11,8 @@ export const Footer = () => {
             <div className="flex flex-col m-7 gap-2">
                 {
                     user.logged && <>
-                        <h2 className="font-bold">{user.email}</h2>
-                        <button className="py-2 px-6 bg-black text-white rounded font-bold hover:text-yellow-800" onClick={logout}>Cerrar Sesion</button>
+                        <h2 className="font-bold text-[12px]">{user.email}</h2>
+                        <button className="py-1 px-4 bg-black text-white rounded font-bold hover:text-yellow-800" onClick={logout}>Cerrar Sesion</button>
                     </>
                 }
             </div>
