@@ -7,11 +7,11 @@ export const Footer = () => {
     const { logout, user } = useContext(UserContext)
 
     return (
-        <div className="m-auto flex felx-col justify-center h-40 items-center gap-8 border-t-2">
-            <div className="flex flex-col m-7 gap-4">
+        <div className="m-auto flex felx-col justify-center h-40 items-center border-t-2">
+            <div className="flex flex-col m-7 gap-2">
                 {
                     user.logged && <>
-                        <h2 className="font-bold">Bienvenido {user.email}</h2>
+                        <h2 className="font-bold">{user.email}</h2>
                         <button className="py-2 px-6 bg-black text-white rounded font-bold hover:text-yellow-800" onClick={logout}>Cerrar Sesion</button>
                     </>
                 }
