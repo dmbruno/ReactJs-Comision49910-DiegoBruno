@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='relative px-3'>
-      <div className='absolute inset-0 bg-[url("./banner.bmp")] bg-cover bg-center opacity-50 z-0'></div>
+      <div className='absolute inset-0 bg-[url("./portadaGrizzly.jfif")] bg-cover bg-center opacity-50 z-0'></div>
       <div className='relative z-10'>
         <UserProvider>
           <CartProvider>
