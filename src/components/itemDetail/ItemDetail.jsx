@@ -34,7 +34,7 @@ const ItemDetail = ({ item }) => {
                     <img className="object-contain h-48 w-full mb-4" src={item.img} alt={item.name} />
                     <div className="px-4 lg:w-full">
                         <div>
-                            <p className="text-gray-700 mb-2"> Descripcion: {item.description} </p>
+                            <p className="text-gray-700 mb-2">{item.description} </p>
                             <p className="text-gray-700 mb-2 font-bold"> Precio: ${item.price}</p>
                         </div>
                         {

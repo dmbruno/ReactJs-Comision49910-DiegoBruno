@@ -21,13 +21,13 @@ export const NavBar = () => {
                     to={"/"}
                     className={({ isActive }) =>
                         `flex space-x-4 sm:text-2xl hover:text-yellow-800 ${isActive ? "text-orange-600 font-bold" : "text-black font-bold"}`
-                    }>Inicio
+                    }>Categorias
                 </NavLink>
                 <NavLink
                     to={"/Menu"}
                     className={({ isActive }) =>
                         `flex space-x-4 sm:text-2xl hover:text-yellow-800 ${isActive ? "text-orange-600 font-bold" : "text-black font-bold"}`
-                    }>Menu del Oso
+                    }>Menu
                 </NavLink>
                 {
                     user.email === "dmbruno61@gmail.com" && (
@@ -35,7 +35,7 @@ export const NavBar = () => {
                             to={"/checkoutadmin"}
                             className={({ isActive }) =>
                                 `flex space-x-4 sm:text-2xl hover:text-yellow-800 ${isActive ? "text-orange-600 font-bold" : "text-black font-bold"}`
-                            }>Panel Admin
+                            }>Admin
                         </NavLink>
                     )
                 }
