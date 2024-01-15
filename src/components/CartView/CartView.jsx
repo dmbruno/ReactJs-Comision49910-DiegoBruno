@@ -46,7 +46,7 @@ export const CartView = () => {
             <h4 className="font-mono text-2xl sm:text-4xl">TOTAL: ${totalCart()}</h4>
             <button className="flex justify-center text-white rounded hover:bg-slate-600 py-1 px-3 bg-slate-500 my-3 font-bold" onClick={clearCart}>Vaciar Carrito</button>
             <button className="mb-2">
-                                <Link to="/Checkout" className="bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded mb-2 md:text-[15px]">
+                                <Link to="/Checkout" className="bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded mb-2 md:w-full">
                                     Terminar compra
                                 </Link>
             </button>
