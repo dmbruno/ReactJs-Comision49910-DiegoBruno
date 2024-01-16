@@ -11,9 +11,10 @@ Algunos de los comandos que utilizamos
 
 ​
 Entre otros comandos…
-Dependencias
 
-​
+
+
+Dependencias
 
     taiwind
     ReactJs
