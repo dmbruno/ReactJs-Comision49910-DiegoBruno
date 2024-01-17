@@ -32,6 +32,7 @@ export const Login = () => {
     return (
         <div >
             <h2 className="text-3xl font-mono text-center">Login</h2>
+            
             <hr />
             <form onSubmit={handleSubmit} className="flex flex-col items-center justify-center p-5 gap-4">
                 <input

@@ -29,9 +29,12 @@ export const AppRouter = () => {
 
         <BrowserRouter>
             <NavBar />
+            
+
             {
                 user.logged
                     ? <Routes>
+                        
                         <Route path="/" element={<Inicio />} />
                         <Route path="/menu" element={<ItemListConteiner />} />
                         <Route path="/menu/:categoryId" element={<ItemListConteiner />} />
