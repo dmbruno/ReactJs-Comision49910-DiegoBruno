@@ -1,7 +1,7 @@
-Menu Interactivo para GRIZZLY BAR
+##Menu Interactivo para GRIZZLY BAR
 
 ​
-Algunos de los comandos que utilizamos
+####Algunos de los comandos que utilizamos
 
     git init
     git stauts
@@ -14,17 +14,17 @@ Entre otros comandos…
 
 
 
-Dependencias
+###Dependencias
 
     taiwind
     ReactJs
     SweetAlert2
 
 ​
-Es una aplicacion realizada en el Curso de React Js dictado por CoderHouse, por el profesor Conrado Lanusse Comision 49910
+####Es una aplicacion realizada en el Curso de React Js dictado por CoderHouse, por el profesor Conrado Lanusse Comision 49910
 
 ​
-Es un carro de compras que ofrece:
+###Es un carrito de compras que ofrece:
 
     Login de usuarios condicionando al administrador/Dueño
     navegacion por categorias
